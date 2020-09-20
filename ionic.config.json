@@ -1,0 +1,7 @@
+{
+  "name": "ifoodPlaces",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
