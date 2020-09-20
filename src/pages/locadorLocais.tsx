@@ -1,7 +1,8 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import React from 'react';
-import ExploreContainer from '../components/ExploreContainer';
 import Topo from '../components/Topo';
+import TituloPagina from '../components/TituloPagina';
+import ItemLocais from '../components/ItemLocais';
 
 const LocadorLocais: React.FC = () => {
   return (
@@ -10,12 +11,12 @@ const LocadorLocais: React.FC = () => {
         <Topo />
       </IonHeader>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Meus locais</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer />
+        <TituloPagina />
+        <ItemLocais />
+        <ItemLocais />
+        <ItemLocais />
+        <ItemLocais />
+        <ItemLocais />
       </IonContent>
     </IonPage>
   );

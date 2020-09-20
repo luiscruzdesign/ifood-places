@@ -1,0 +1,9 @@
+.default-side-padding {
+    padding: 0 20px;
+}
+
+.white-footer {
+    background: #ffffff;
+    height: 60px;
+    padding: 0 10px;
+}

@@ -1,0 +1,13 @@
+address {
+  font-style: normal;
+}
+
+address p {
+  margin: 0 0 5px;
+  font-size: 14px;
+  color: #605959;
+}
+
+address p:last-of-type {
+  margin-bottom: 0;
+}
