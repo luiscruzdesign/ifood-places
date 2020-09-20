@@ -15,14 +15,17 @@ const LocadorLocal: React.FC = () => {
       </IonHeader>
       <IonContent fullscreen>
         <TituloPagina />
-        <div className="default-side-padding">
+        <div className="default-side-padding" style={{paddingTop: '10px'}}>
           <Endereco />
           <ProgressBar />
-          <h2>Clientes</h2>
+          <div className="simple-divider"></div>
+          <div className="simple-divider"></div>
+          <h2 className="section-title">Clientes</h2>
         </div>
           <ItemClienteProposta />
+          <div className="simple-divider"></div>
         <div className="default-side-padding">
-          <h2>Propostas</h2>
+          <h2 className="section-title">Propostas</h2>
         </div>
           <ItemClienteProposta />
           <ItemClienteProposta />
