@@ -1,0 +1,26 @@
+.topo {
+  background: #DA3C40;
+  height: 65px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.topo div {
+  position: relative;
+}
+
+.topo div img {
+  position: relative;
+  top: -19px;
+}
+
+.topo div small {
+  position: absolute;
+  top: 38px;
+  color: #DFE618;
+  left: 50%;
+  margin-left: 16px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 15px;
+}

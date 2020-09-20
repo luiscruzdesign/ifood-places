@@ -1,14 +1,13 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import React from 'react';
 import ExploreContainer from '../components/ExploreContainer';
+import Topo from '../components/Topo';
 
 const ClienteLocalEnviarProposta: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar>
-          <IonTitle>Cliente local - enviar proposta</IonTitle>
-        </IonToolbar>
+        <Topo />
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">

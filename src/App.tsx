@@ -51,6 +51,7 @@ const App: React.FC = () => (
         <Route exact path="/cliente-propostas" component={ClientePropostas} />
         <Route exact path="/cliente-local-enviar-proposta" component={ClienteLocalEnviarProposta} />
         <Route exact path="/cliente-local-proposta" component={ClienteLocalProposta} />
+        <Route exact path="/cliente-contratos" component={ClienteContratos} />
         <Route exact path="/" render={() => <Redirect to="/home" />} />
       </IonRouterOutlet>
     </IonReactRouter>
