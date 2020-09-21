@@ -1,0 +1,92 @@
+.quantity-selector {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.quantity-count {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-count p {
+    margin: 0;
+    color: #605959;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.circle-button {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.circle-button:last-of-type {
+    margin-right: 0;
+}
+
+.circle-button p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 26px;
+    color: #605959;
+    position: relative;
+    top: -2px;
+}
+
+.circle-button.normal {
+    background: #F5F5F5;
+}
+
+.circle-button.success {
+    background: #3CDA67;
+}
+
+.circle-button.success img {
+    width: 20px;
+    position: relative;
+    top: 3px;
+}
+
+.horario-controller {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.horario-input {
+    display: flex;
+    align-items: center;
+}
+
+.horario-input p {
+    color: #605959;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 15px 0 20px;
+}
+
+.horario-input input {
+    width: 60px;
+    height: 40px;
+    margin: 0;
+    border-radius: 5px;
+    border: 1px solid #D1D0D0;
+}
+
+.horario-input span {
+    color: #605959;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 5px;
+    font-style: normal;
+    position: relative;
+    top: -2px;
+}

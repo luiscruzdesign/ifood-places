@@ -22,7 +22,7 @@ const Home: React.FC = () => {
             <IonInput value={password} type="password" placeholder="Senha" onIonChange={e => setPassword(e.detail.value!)}></IonInput>
           </IonItem>
           <IonItem className="forgot">
-            <a href="#" className="forgot">Esqueci minha senha</a>
+            {/* <a href="#" className="forgot">Esqueci minha senha</a> */}
           </IonItem>
           <IonButton expand="full" color="primary">Quero disponibilizar minha cozinha</IonButton>
           <IonButton expand="full" color="success">Quero alugar uma cozinha</IonButton>
