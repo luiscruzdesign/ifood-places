@@ -1,7 +1,8 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonHeader, IonPage } from '@ionic/react';
 import React from 'react';
-import ExploreContainer from '../components/ExploreContainer';
+import TituloPagina from '../components/TituloPagina';
 import Topo from '../components/Topo';
+import ItemClienteContrato from '../components/ItemClienteContrato';
 
 const ClienteContratos: React.FC = () => {
   return (
@@ -10,12 +11,10 @@ const ClienteContratos: React.FC = () => {
         <Topo />
       </IonHeader>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Cliente contratos</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer />
+        <TituloPagina />
+        <ItemClienteContrato />
+        <ItemClienteContrato />
+        <ItemClienteContrato />
       </IonContent>
     </IonPage>
   );
