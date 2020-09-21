@@ -24,20 +24,20 @@ const LocadorLocal: React.FC = () => {
           <h2 className="section-title">Clientes</h2>
         </div>
           <Link to="/locador-cliente">
-            <ItemClienteProposta />
+            <ItemClienteProposta nome="Jaf Burgers" periodo="Segunda a sexta" horario="0h as 5h" valorHora={30} valorSemana={900}  />
           </Link>
           <div className="simple-divider"></div>
         <div className="default-side-padding">
           <h2 className="section-title">Propostas</h2>
         </div>
           <Link to="/locador-local-proposta">
-            <ItemClienteProposta />
+            <ItemClienteProposta nome="Buteco Certo" periodo="Finais de semana" horario="9h as 22h" valorHora={30} valorSemana={4000}  />
           </Link>
           <Link to="/locador-local-proposta">
-            <ItemClienteProposta />
+            <ItemClienteProposta nome="Mexican Way" periodo="Segunda a sábado" horario="12h as 18h" valorHora={45} valorSemana={1300}  />
           </Link>
           <Link to="/locador-local-proposta">
-            <ItemClienteProposta />
+            <ItemClienteProposta nome="Blue Moon" periodo="Finais de semana" horario="9h as 18h" valorHora={60} valorSemana={2000}  />
           </Link>
       </IonContent>
       <IonFooter className="white-footer">

@@ -22,7 +22,7 @@ const LocadorCliente: React.FC = () => {
           <div className="simple-divider"></div>
           <h2 className="section-title">Contrato</h2>
         </div>
-        <ItemClienteProposta />
+        <ItemClienteProposta nome="Jaf Burgers" periodo="Segunda a sexta" horario="0h as 5h" valorHora={30} valorSemana={900}  />
       </IonContent>
       <IonFooter className="white-footer">
         <div style={{display: 'flex'}}>

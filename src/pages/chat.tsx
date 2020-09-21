@@ -13,7 +13,7 @@ const Chat: React.FC = () => {
       </IonHeader>
       <IonContent fullscreen>
         <TituloPagina title="Chat" />
-        <ItemClienteProposta />
+        <ItemClienteProposta nome="Jaf Burgers" periodo="Segunda a sexta" horario="0h as 5h" valorHora={30} valorSemana={900} />
         <div className="default-side-padding" style={{paddingTop: '10px'}}>
           <div className="chat-message left">
             <p>
