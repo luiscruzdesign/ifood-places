@@ -1,0 +1,45 @@
+.item-local {
+  padding: 10px;
+  margin: 0 10px 10px;
+  border: 1px solid #D1D0D0;
+  border-radius: 5px;
+}
+
+.item-local h1 {
+  color: #DA3C40;
+  font-size: 18px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.item-local p {
+  font-size: 14px;
+  color: #605959;
+  margin: 0 0 5px 0;
+}
+
+.item-local p.status-proposta {
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.item-local p:first-of-type, .item-local p:last-of-type {
+  font-weight: bold;
+}
+
+
+.item-local p.success {
+  color: #3CDA67;
+}
+
+.item-local p.danger {
+  color: #DA3C40;
+}
+
+.item-local p.alert {
+  color: #FF7F00;
+}
+
+.item-local p:last-of-type {
+  margin-bottom: 0;
+}
