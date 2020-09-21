@@ -1,0 +1,21 @@
+.confirm-bairro-cidade {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.confirm-bairro-cidade p {
+  margin: 0;
+  color: #605959;
+  margin-left: 20px;
+}
+
+.confirm-bairro-cidade p:first-of-type {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.confirm-bairro-cidade p:nth-of-type(2) {
+  font-size: 14px;
+}
