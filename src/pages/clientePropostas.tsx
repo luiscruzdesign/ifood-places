@@ -1,6 +1,7 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import React from 'react';
-import ExploreContainer from '../components/ExploreContainer';
+import TituloPagina from '../components/TituloPagina';
+import ItemResultadoBuscaProposta from '../components/ItemResultadoBuscaProposta';
 import Topo from '../components/Topo';
 
 const ClientePropostas: React.FC = () => {
@@ -10,12 +11,11 @@ const ClientePropostas: React.FC = () => {
         <Topo />
       </IonHeader>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Cliente propostas</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer />
+        <TituloPagina />
+        <ItemResultadoBuscaProposta />
+        <ItemResultadoBuscaProposta />
+        <ItemResultadoBuscaProposta />
+        <ItemResultadoBuscaProposta />
       </IonContent>
     </IonPage>
   );
