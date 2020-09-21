@@ -9,7 +9,7 @@ const ItemClienteProposta: React.FC<ContainerProps> = () => {
     <div className="item-local">
       <h1>Jaf Burgers</h1>
       <div style={{marginLeft: '10px', marginBottom: '20px'}}>
-        <Endereco />
+        <Endereco endereco="R.Cerro Corá" numero={10} bairro="Vila Romana" cidade="São Paulo" estado="SP" />
       </div>
       <p>Segunda a sexta</p>
       <p>7h30 às 18h</p>

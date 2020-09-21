@@ -11,7 +11,8 @@ interface ContainerProps {
   endereco: string,
   numero: number,
   bairro: string,
-  cidade: string
+  cidade: string,
+  estado: string
 }
 
 const ItemLocais: React.FC<ContainerProps> = (props) => {
@@ -19,7 +20,7 @@ const ItemLocais: React.FC<ContainerProps> = (props) => {
     <div className="item-local">
       <h1 style={{marginBottom: 0}}>{props.nome}</h1>
       <p style={{marginBottom: 10}} className="status"><span className={props.ociosidadeStatus}>{props.ociosidade}% ocioso</span> <span className={props.propostasStatus}>({props.propostas} propostas)</span></p>
-      <Endereco />
+      <Endereco endereco={props.endereco} numero={props.numero} bairro={props.bairro} cidade={props.cidade} estado={props.estado} />
     </div>
   );
 };

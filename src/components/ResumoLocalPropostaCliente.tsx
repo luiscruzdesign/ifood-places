@@ -8,7 +8,7 @@ const ResumoLocalPropostaCliente: React.FC<ContainerProps> = () => {
   return (
     <div className="resumo-local">
       <h1>Jaf Burgers</h1>
-      <Endereco />
+      <Endereco endereco="R.Cerro Corá" numero={10} bairro="Vila Romana" cidade="São Paulo" estado="SP" />
       <div>
         <p><strong>Estrutura</strong></p>
         <p>Bocas de fogão <strong>8</strong></p>

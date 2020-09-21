@@ -9,7 +9,7 @@ const DetalheClientePropostaEnviada: React.FC<ContainerProps> = () => {
     <div className="item-proposta">
       <h1>Jaf Burgers</h1>
       <p className="status-proposta success">Proposta enviada</p>
-      <Endereco />
+      <Endereco endereco="R.Cerro Corá" numero={10} bairro="Vila Romana" cidade="São Paulo" estado="SP" />
       <p style={{marginTop: '10px'}}>Segunda a sexta</p>
       <p>7h30 às 18h</p>
       <p className="success">R$ 30,00/hora (R$ 900,00 semana)</p>

@@ -16,7 +16,7 @@ const LocadorLocalProposta: React.FC = () => {
       <IonContent fullscreen>
         <TituloPagina title="Jaf Burgers" />
         <div className="default-side-padding" style={{paddingTop: '10px'}}>
-          <Endereco />
+          <Endereco endereco="R.Cerro Corá" numero={10} bairro="Vila Romana" cidade="São Paulo" estado="SP" />
           <ProgressBarProposta />
           <div className="simple-divider"></div>
           <div className="simple-divider"></div>
