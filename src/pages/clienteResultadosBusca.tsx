@@ -12,7 +12,7 @@ const ClienteResultadosBusca: React.FC = () => {
         <Topo />
       </IonHeader>
       <IonContent fullscreen>
-        <TituloPagina />
+        <TituloPagina title="Locais" />
         <ItemResultadoBuscaProposta />
         <ItemResultadoBusca />
         <ItemResultadoBusca />

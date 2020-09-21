@@ -11,7 +11,7 @@ const ClientePropostas: React.FC = () => {
         <Topo />
       </IonHeader>
       <IonContent fullscreen>
-        <TituloPagina />
+        <TituloPagina title="Propostas"/>
         <ItemResultadoBuscaProposta />
         <ItemResultadoBuscaProposta />
         <ItemResultadoBuscaProposta />

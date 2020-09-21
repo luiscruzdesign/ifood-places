@@ -11,7 +11,7 @@ const ClienteContratos: React.FC = () => {
         <Topo />
       </IonHeader>
       <IonContent fullscreen>
-        <TituloPagina />
+        <TituloPagina title="Contratos" />
         <ItemClienteContrato />
         <ItemClienteContrato />
         <ItemClienteContrato />

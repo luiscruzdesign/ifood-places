@@ -14,7 +14,7 @@ const ClienteLocalEnviarProposta: React.FC = () => {
         <Topo />
       </IonHeader>
       <IonContent fullscreen>
-        <TituloPagina />
+        <TituloPagina title="Enviar proposta" />
         <ResumoLocalPropostaCliente />
         <div className="default-side-padding" style={{paddingTop: '10px'}}>
           <h2 className="section-title">Horários para locação</h2>

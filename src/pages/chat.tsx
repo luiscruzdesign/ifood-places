@@ -12,7 +12,7 @@ const Chat: React.FC = () => {
         <Topo />
       </IonHeader>
       <IonContent fullscreen>
-        <TituloPagina />
+        <TituloPagina title="Chat" />
         <ItemClienteProposta />
         <div className="default-side-padding" style={{paddingTop: '10px'}}>
           <div className="chat-message left">

@@ -18,7 +18,7 @@ const LocadorCliente: React.FC = () => {
         <Topo />
       </IonHeader>
       <IonContent fullscreen>
-        <TituloPagina />
+        <TituloPagina title="Jaf Burgers" />
         <div className="default-side-padding" style={{paddingTop: '10px'}}>
           <h2 className="section-title">Estrutura</h2>
           <IonSelect value={item} placeholder="Selecione um item" onIonChange={e => setItem(e.detail.value)}>

@@ -14,7 +14,7 @@ const LocadorLocal: React.FC = () => {
         <Topo />
       </IonHeader>
       <IonContent fullscreen>
-        <TituloPagina />
+        <TituloPagina title="Jaf Burgers" />
         <div className="default-side-padding" style={{paddingTop: '10px'}}>
           <Endereco />
           <ProgressBar />

@@ -21,7 +21,7 @@ const ClienteFiltrosBusca: React.FC = () => {
         <Topo />
       </IonHeader>
       <IonContent fullscreen>
-        <TituloPagina />
+        <TituloPagina title="Filtros" />
         <div className="default-side-padding" style={{paddingTop: '10px'}}>
           <h2 className="section-title">Localização</h2>
           <input type="text" placeholder="Nome da cidade" className="text-cidade"></input>

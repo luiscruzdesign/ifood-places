@@ -11,7 +11,7 @@ const ClienteLocalProposta: React.FC = () => {
         <Topo />
       </IonHeader>
       <IonContent fullscreen>
-        <TituloPagina />
+        <TituloPagina title="Proposta" />
         <DetalheClientePropostaEnviada />
       </IonContent>
       <IonFooter className="white-footer">

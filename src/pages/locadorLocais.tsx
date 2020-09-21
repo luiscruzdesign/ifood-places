@@ -11,7 +11,7 @@ const LocadorLocais: React.FC = () => {
         <Topo />
       </IonHeader>
       <IonContent fullscreen>
-        <TituloPagina />
+        <TituloPagina title="Locais" />
         <ItemLocais />
         <ItemLocais />
         <ItemLocais />
