@@ -1,0 +1,49 @@
+.item-proposta {
+  padding: 10px;
+  margin: 0 10px 10px;
+  border: 1px solid #D1D0D0;
+  border-radius: 5px;
+}
+
+.item-proposta h1 {
+  color: #DA3C40;
+  font-size: 18px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.item-proposta p {
+  font-size: 14px;
+  color: #605959;
+  margin: 0 0 5px 0;
+}
+
+.item-proposta p.status-proposta {
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.item-proposta p:first-of-type, .item-proposta p:nth-of-type(2) {
+  font-weight: bold;
+}
+
+.item-proposta p.mensagem {
+  margin-top: 20px;
+}
+
+
+.item-proposta p.success {
+  color: #3CDA67;
+}
+
+.item-proposta p.danger {
+  color: #DA3C40;
+}
+
+.item-proposta p.alert {
+  color: #FF7F00;
+}
+
+.item-proposta p:last-of-type {
+  margin-bottom: 0;
+}

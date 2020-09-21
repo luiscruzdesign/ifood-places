@@ -1,7 +1,8 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonFooter, IonButton } from '@ionic/react';
 import React from 'react';
-import ExploreContainer from '../components/ExploreContainer';
+import TituloPagina from '../components/TituloPagina';
 import Topo from '../components/Topo';
+import DetalheClientePropostaEnviada from '../components/DetalheClientePropostaEnviada'
 
 const ClienteLocalProposta: React.FC = () => {
   return (
@@ -10,14 +11,21 @@ const ClienteLocalProposta: React.FC = () => {
         <Topo />
       </IonHeader>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Cliente  local - proposta</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer />
+        <TituloPagina />
+        <DetalheClientePropostaEnviada />
       </IonContent>
+      <IonFooter className="white-footer">
+        <div style={{display: 'flex'}}>
+          <div style={{width: '50%'}}>
+            <IonButton expand="full" color="danger">Cancelar proposta</IonButton>
+          </div>
+          <div style={{width: '50%'}}>
+            <IonButton expand="full" color="primary">Iniciar chat</IonButton>
+          </div>
+        </div>
+      </IonFooter>
     </IonPage>
+    
   );
 };
 

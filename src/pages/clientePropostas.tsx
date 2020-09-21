@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonHeader, IonPage } from '@ionic/react';
 import React from 'react';
 import TituloPagina from '../components/TituloPagina';
 import ItemResultadoBuscaProposta from '../components/ItemResultadoBuscaProposta';
