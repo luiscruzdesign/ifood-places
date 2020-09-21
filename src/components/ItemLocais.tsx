@@ -2,13 +2,23 @@ import React from 'react';
 import Endereco from './Endereco'
 import './styles/ItemLocais.css';
 
-interface ContainerProps { }
+interface ContainerProps {
+  nome: string,
+  ociosidade: number,
+  ociosidadeStatus: string,
+  propostas: number,
+  propostasStatus: string,
+  endereco: string,
+  numero: number,
+  bairro: string,
+  cidade: string
+}
 
-const ItemLocais: React.FC<ContainerProps> = () => {
+const ItemLocais: React.FC<ContainerProps> = (props) => {
   return (
     <div className="item-local">
-      <h1>Jaf Burgers</h1>
-      <p className="status"><span className="alert">50% ocioso</span> <span className="success">(2 propostas)</span></p>
+      <h1 style={{marginBottom: 0}}>{props.nome}</h1>
+      <p style={{marginBottom: 10}} className="status"><span className={props.ociosidadeStatus}>{props.ociosidade}% ocioso</span> <span className={props.propostasStatus}>({props.propostas} propostas)</span></p>
       <Endereco />
     </div>
   );
