@@ -3,6 +3,7 @@ import React from 'react';
 import TituloPagina from '../components/TituloPagina';
 import Topo from '../components/Topo';
 import DetalheClientePropostaEnviada from '../components/DetalheClientePropostaEnviada'
+import { Link } from 'react-router-dom';
 
 const ClienteLocalProposta: React.FC = () => {
   return (
@@ -17,10 +18,14 @@ const ClienteLocalProposta: React.FC = () => {
       <IonFooter className="white-footer">
         <div style={{display: 'flex'}}>
           <div style={{width: '50%'}}>
-            <IonButton expand="full" color="danger">Cancelar proposta</IonButton>
+            <Link to="/cliente-resultados-busca">
+              <IonButton expand="full" color="danger">Cancelar proposta</IonButton>
+            </Link>
           </div>
           <div style={{width: '50%'}}>
-            <IonButton expand="full" color="primary">Iniciar chat</IonButton>
+            <Link to="/chat">
+              <IonButton expand="full" color="primary">Iniciar chat</IonButton>
+            </Link>
           </div>
         </div>
       </IonFooter>

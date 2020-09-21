@@ -3,6 +3,7 @@ import React from 'react';
 import Topo from '../components/Topo';
 import TituloPagina from '../components/TituloPagina';
 import ItemLocais from '../components/ItemLocais';
+import { Link } from 'react-router-dom';
 
 const LocadorLocais: React.FC = () => {
   return (
@@ -12,11 +13,21 @@ const LocadorLocais: React.FC = () => {
       </IonHeader>
       <IonContent fullscreen>
         <TituloPagina title="Locais" />
-        <ItemLocais />
-        <ItemLocais />
-        <ItemLocais />
-        <ItemLocais />
-        <ItemLocais />
+        <Link to="/locador-local">
+          <ItemLocais />
+        </Link>
+        <Link to="/locador-local">
+          <ItemLocais />
+        </Link>
+        <Link to="/locador-local">
+          <ItemLocais />
+        </Link>
+        <Link to="/locador-local">
+          <ItemLocais />
+        </Link>
+        <Link to="/locador-local">
+          <ItemLocais />
+        </Link>
       </IonContent>
     </IonPage>
   );

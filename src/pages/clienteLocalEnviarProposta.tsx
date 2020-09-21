@@ -4,6 +4,7 @@ import TituloPagina from '../components/TituloPagina';
 import Topo from '../components/Topo';
 import ResumoLocalPropostaCliente from '../components/ResumoLocalPropostaCliente';
 import './styles/ClienteLocalEnviarProposta.css';
+import { Link } from 'react-router-dom';
 
 const ClienteLocalEnviarProposta: React.FC = () => {
   const [periodo, setPeriodo] = useState<string>();
@@ -64,7 +65,9 @@ const ClienteLocalEnviarProposta: React.FC = () => {
         </div>
       </IonContent>
       <IonFooter className="white-footer">
-        <IonButton expand="full" color="success">Enviar proposta</IonButton>
+        <Link to="/cliente-resultados-busca">
+          <IonButton expand="full" color="success">Enviar proposta</IonButton>
+        </Link>
       </IonFooter>
     </IonPage>
   );

@@ -2,6 +2,8 @@ import { IonContent, IonHeader, IonPage, IonItem, IonInput, IonButton } from '@i
 import React, { useState } from 'react';
 import Topo from '../components/Topo';
 import './styles/Home.css';
+import { Link } from 'react-router-dom';
+
 
 const Home: React.FC = () => {
 
@@ -22,10 +24,14 @@ const Home: React.FC = () => {
             <IonInput value={password} type="password" placeholder="Senha" onIonChange={e => setPassword(e.detail.value!)}></IonInput>
           </IonItem>
           <IonItem className="forgot">
-            {/* <a href="#" className="forgot">Esqueci minha senha</a> */}
+            <Link to="/" className="forgot">Esqueci minha senha</Link>
           </IonItem>
-          <IonButton expand="full" color="primary">Quero disponibilizar minha cozinha</IonButton>
-          <IonButton expand="full" color="success">Quero alugar uma cozinha</IonButton>
+          <Link to="/locador-locais">
+            <IonButton expand="full" color="primary">Quero disponibilizar minha cozinha</IonButton>
+          </Link>
+          <Link to="/cliente-resultados-busca">
+            <IonButton expand="full" color="success">Quero alugar uma cozinha</IonButton>
+          </Link>
         </div>
       </IonContent>
     </IonPage>

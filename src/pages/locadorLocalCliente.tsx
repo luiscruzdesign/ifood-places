@@ -5,6 +5,7 @@ import Endereco from '../components/Endereco';
 import ProgressBarCliente from '../components/ProgressBarCliente';
 import ItemClienteProposta from '../components/ItemClienteProposta';
 import Topo from '../components/Topo';
+import { Link } from 'react-router-dom';
 
 const LocadorCliente: React.FC = () => {
   return (
@@ -19,17 +20,21 @@ const LocadorCliente: React.FC = () => {
           <ProgressBarCliente />
           <div className="simple-divider"></div>
           <div className="simple-divider"></div>
-          <h2 className="section-title">Proposta</h2>
+          <h2 className="section-title">Contrato</h2>
         </div>
         <ItemClienteProposta />
       </IonContent>
       <IonFooter className="white-footer">
         <div style={{display: 'flex'}}>
           <div style={{width: '50%'}}>
-            <IonButton expand="full" color="danger">Cancelar contrato</IonButton>
+            <Link to="/locador-local">
+              <IonButton expand="full" color="danger">Cancelar contrato</IonButton>
+            </Link>
           </div>
           <div style={{width: '50%'}}>
-            <IonButton expand="full" color="primary">Chat</IonButton>
+            <Link to="/chat">
+              <IonButton expand="full" color="primary">Chat</IonButton>
+            </Link>
           </div>
         </div>
       </IonFooter>

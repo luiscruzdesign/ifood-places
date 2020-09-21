@@ -8,6 +8,7 @@ import ConfirmBairroCidade from '../components/ConfirmBairroCidade';
 import ItemBairro from '../components/ItemBairro';
 import './styles/ClienteFiltrosBusca.css';
 import './styles/Common.css';
+import { Link } from 'react-router-dom';
 
 const ClienteFiltrosBusca: React.FC = () => {
   const [bairro, setBairro] = useState<string>();
@@ -107,7 +108,9 @@ const ClienteFiltrosBusca: React.FC = () => {
         </div>
       </IonContent>
       <IonFooter className="white-footer">
-        <IonButton expand="full" color="success">Salvar filtros</IonButton>
+        <Link to="/cliente-resultados-busca">
+          <IonButton expand="full" color="success">Salvar filtros</IonButton>
+        </Link>
       </IonFooter>
     </IonPage>
   );

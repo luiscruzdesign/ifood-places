@@ -6,6 +6,7 @@ import Topo from '../components/Topo';
 import TituloPagina from '../components/TituloPagina'
 import ItemEstrutura from '../components/ItemEstrutura'
 import ItemHorario from '../components/ItemHorario'
+import { Link } from 'react-router-dom';
 
 const LocadorCliente: React.FC = () => {
   const [item, setItem] = useState<string>();
@@ -90,10 +91,14 @@ const LocadorCliente: React.FC = () => {
       <IonFooter className="white-footer">
         <div style={{display: 'flex'}}>
           <div style={{width: '50%'}}>
-            <IonButton expand="full" color="success">Salvar edição</IonButton>
+            <Link to="/locador-local">
+              <IonButton expand="full" color="success">Salvar edição</IonButton>
+            </Link>
           </div>
           <div style={{width: '50%'}}>
-            <IonButton expand="full" color="danger">Cancelar edição</IonButton>
+            <Link to="/locador-local">
+              <IonButton expand="full" color="danger">Cancelar edição</IonButton>
+            </Link>
           </div>
         </div>
       </IonFooter>

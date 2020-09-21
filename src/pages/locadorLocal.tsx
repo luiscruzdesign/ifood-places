@@ -6,6 +6,7 @@ import TituloPagina from '../components/TituloPagina';
 import Endereco from '../components/Endereco'
 import ProgressBar from '../components/ProgressBar'
 import ItemClienteProposta from '../components/ItemClienteProposta'
+import { Link } from 'react-router-dom';
 
 const LocadorLocal: React.FC = () => {
   return (
@@ -22,17 +23,27 @@ const LocadorLocal: React.FC = () => {
           <div className="simple-divider"></div>
           <h2 className="section-title">Clientes</h2>
         </div>
-          <ItemClienteProposta />
+          <Link to="/locador-cliente">
+            <ItemClienteProposta />
+          </Link>
           <div className="simple-divider"></div>
         <div className="default-side-padding">
           <h2 className="section-title">Propostas</h2>
         </div>
-          <ItemClienteProposta />
-          <ItemClienteProposta />
-          <ItemClienteProposta />
+          <Link to="/locador-local-proposta">
+            <ItemClienteProposta />
+          </Link>
+          <Link to="/locador-local-proposta">
+            <ItemClienteProposta />
+          </Link>
+          <Link to="/locador-local-proposta">
+            <ItemClienteProposta />
+          </Link>
       </IonContent>
       <IonFooter className="white-footer">
-        <IonButton expand="full" color="success">Editar local</IonButton>
+        <Link to="/locador-local-editar">
+          <IonButton expand="full" color="success">Editar local</IonButton>
+        </Link>
       </IonFooter>
     </IonPage>
   );

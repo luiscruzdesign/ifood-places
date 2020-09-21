@@ -9,7 +9,7 @@
     border: none;
 }
 .forgot a {
-    color: #DA3C40;
+    color: #DA3C40 !important;
     text-decoration: none;
     font-size: 14px;
     position: absolute;

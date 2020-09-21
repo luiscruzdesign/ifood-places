@@ -3,6 +3,7 @@ import React from 'react';
 import TituloPagina from '../components/TituloPagina';
 import ItemClienteContrato from '../components/ItemClienteContrato';
 import Topo from '../components/Topo';
+import { Link } from 'react-router-dom';
 
 const ClienteLocalContrato: React.FC = () => {
   return (
@@ -17,10 +18,14 @@ const ClienteLocalContrato: React.FC = () => {
       <IonFooter className="white-footer">
         <div style={{display: 'flex'}}>
           <div style={{width: '50%'}}>
-            <IonButton expand="full" color="danger">Cancelar contrato</IonButton>
+            <Link to="/cliente-contratos">
+              <IonButton expand="full" color="danger">Cancelar contrato</IonButton>
+            </Link>
           </div>
           <div style={{width: '50%'}}>
-            <IonButton expand="full" color="primary">Chat</IonButton>
+            <Link to="/chat">
+              <IonButton expand="full" color="primary">Chat</IonButton>
+            </Link>
           </div>
         </div>
       </IonFooter>

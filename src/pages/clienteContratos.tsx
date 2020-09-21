@@ -3,6 +3,7 @@ import React from 'react';
 import TituloPagina from '../components/TituloPagina';
 import Topo from '../components/Topo';
 import ItemClienteContrato from '../components/ItemClienteContrato';
+import { Link } from 'react-router-dom';
 
 const ClienteContratos: React.FC = () => {
   return (
@@ -12,9 +13,15 @@ const ClienteContratos: React.FC = () => {
       </IonHeader>
       <IonContent fullscreen>
         <TituloPagina title="Contratos" />
-        <ItemClienteContrato />
-        <ItemClienteContrato />
-        <ItemClienteContrato />
+        <Link to="/cliente-local-contrato">
+          <ItemClienteContrato />
+        </Link>
+        <Link to="/cliente-local-contrato">
+          <ItemClienteContrato />
+        </Link>
+        <Link to="/cliente-local-contrato">
+          <ItemClienteContrato />
+        </Link>
       </IonContent>
     </IonPage>
   );

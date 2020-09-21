@@ -3,6 +3,7 @@ import React from 'react';
 import TituloPagina from '../components/TituloPagina';
 import ItemResultadoBuscaProposta from '../components/ItemResultadoBuscaProposta';
 import Topo from '../components/Topo';
+import { Link } from 'react-router-dom';
 
 const ClientePropostas: React.FC = () => {
   return (
@@ -12,10 +13,18 @@ const ClientePropostas: React.FC = () => {
       </IonHeader>
       <IonContent fullscreen>
         <TituloPagina title="Propostas"/>
-        <ItemResultadoBuscaProposta />
-        <ItemResultadoBuscaProposta />
-        <ItemResultadoBuscaProposta />
-        <ItemResultadoBuscaProposta />
+        <Link to="/cliente-local-proposta">
+          <ItemResultadoBuscaProposta />
+        </Link>
+        <Link to="/cliente-local-proposta">
+          <ItemResultadoBuscaProposta />
+        </Link>
+        <Link to="/cliente-local-proposta">
+          <ItemResultadoBuscaProposta />
+        </Link>
+        <Link to="/cliente-local-proposta">
+          <ItemResultadoBuscaProposta />
+        </Link>
       </IonContent>
     </IonPage>
   );

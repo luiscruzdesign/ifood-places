@@ -5,6 +5,7 @@ import Topo from '../components/Topo';
 import Endereco from '../components/Endereco';
 import ProgressBarProposta from '../components/ProgressBarProposta';
 import DetalheClienteProposta from '../components/DetalheClienteProposta';
+import { Link } from 'react-router-dom';
 
 const LocadorLocalProposta: React.FC = () => {
   return (
@@ -26,13 +27,19 @@ const LocadorLocalProposta: React.FC = () => {
       <IonFooter className="white-footer">
         <div style={{display: 'flex'}}>
           <div style={{width: '33.3%'}}>
-            <IonButton expand="full" color="danger">Recusar</IonButton>
+            <Link to="/locador-local">
+              <IonButton expand="full" color="danger">Recusar</IonButton>
+            </Link>
           </div>
           <div style={{width: '33.3%'}}>
-            <IonButton expand="full" color="success">Aceitar</IonButton>
+            <Link to="/locador-local">
+              <IonButton expand="full" color="success">Aceitar</IonButton>
+            </Link>
           </div>
           <div style={{width: '33.3%'}}>
-            <IonButton expand="full" color="primary">Chat</IonButton>
+            <Link to="/chat">
+              <IonButton expand="full" color="primary">Chat</IonButton>
+            </Link>
           </div>
         </div>
       </IonFooter>
