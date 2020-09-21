@@ -1,0 +1,48 @@
+.progress-bar {
+  height: 40px;
+  border: 1px solid #D1D0D0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 20px 0 5px;
+  position: relative;
+}
+
+.progress {
+  background: #FF7F00;
+  width: 50%;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+}
+
+.progress-add {
+  background: #3CDA67;
+  width: 75%;
+  height: 40px;
+  position: absolute;
+  left: 0;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+span {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+span.success {
+  color: #3CDA67;
+}
+
+span.danger {
+  color: #DA3C40;
+}
+
+span.alert {
+  color: #FF7F00;
+}

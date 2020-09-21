@@ -37,7 +37,3 @@
 .item-local p.alert {
   color: #FF7F00;
 }
-
-.item-local p:nth-of-type(3) {
-  margin-bottom: 20px;
-}

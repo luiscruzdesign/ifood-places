@@ -1,6 +1,9 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonFooter, IonButton } from '@ionic/react';
 import React from 'react';
-import ExploreContainer from '../components/ExploreContainer';
+import TituloPagina from '../components/TituloPagina';
+import Endereco from '../components/Endereco';
+import ProgressBarCliente from '../components/ProgressBarCliente';
+import ItemClienteProposta from '../components/ItemClienteProposta';
 import Topo from '../components/Topo';
 
 const LocadorCliente: React.FC = () => {
@@ -10,13 +13,26 @@ const LocadorCliente: React.FC = () => {
         <Topo />
       </IonHeader>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Local cliente</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer />
+      <TituloPagina />
+        <div className="default-side-padding" style={{paddingTop: '10px'}}>
+          <Endereco />
+          <ProgressBarCliente />
+          <div className="simple-divider"></div>
+          <div className="simple-divider"></div>
+          <h2 className="section-title">Proposta</h2>
+        </div>
+        <ItemClienteProposta />
       </IonContent>
+      <IonFooter className="white-footer">
+        <div style={{display: 'flex'}}>
+          <div style={{width: '50%'}}>
+            <IonButton expand="full" color="danger">Cancelar contrato</IonButton>
+          </div>
+          <div style={{width: '50%'}}>
+            <IonButton expand="full" color="primary">Chat</IonButton>
+          </div>
+        </div>
+      </IonFooter>
     </IonPage>
   );
 };
