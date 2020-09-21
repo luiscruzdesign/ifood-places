@@ -1,0 +1,31 @@
+.resumo-local {
+  padding: 10px 10px 20px;
+  margin: 0 10px 30px;
+  border: 1px solid #D1D0D0;
+  border-radius: 5px;
+}
+
+.resumo-local h1 {
+  color: #DA3C40;
+  font-size: 18px;
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+.resumo-local div {
+  margin-bottom: 20px;
+}
+
+.resumo-local div:first-of-type {
+  margin-top: 20px;
+}
+
+.resumo-local p {
+  font-size: 14px;
+  color: #605959;
+  margin: 0 0 0 10px;
+}
+
+.resumo-local p:last-of-type, .resumo-local div:last-of-type {
+  margin-bottom: 0;
+}
