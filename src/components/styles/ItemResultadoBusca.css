@@ -24,7 +24,7 @@
 }
 
 .item-local .status span:nth-child(1).success {
-  color: #3CDA67;
+  color: #2bb952;
 }
 
 .item-local .status span:nth-child(1).danger {
@@ -36,7 +36,7 @@
 }
 
 .item-local .status span:nth-child(2).success {
-  color: #3CDA67;
+  color: #2bb952;
 }
 
 .item-local address {

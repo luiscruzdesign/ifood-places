@@ -17,7 +17,7 @@
 }
 
 .progress-add {
-  background: #3CDA67;
+  background: #2bb952;
   width: 75%;
   height: 40px;
   position: absolute;
@@ -36,7 +36,7 @@ span {
 }
 
 span.success {
-  color: #3CDA67;
+  color: #2bb952;
 }
 
 span.danger {
